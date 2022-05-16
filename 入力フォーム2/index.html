@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご利用アンケート</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>ご利用アンケート</h1>
+            </div>
+            <div class="col-sm-6 align-right">
+            <a href="#">HOMEへ戻る</a>
+            </div>
+        </div> 
+    </header>
+    </div><!--container-->
+    <hr>
+
+    <div class="container">
+        <form action="https://h2o-space.com/html/form.php" method="post" class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>この度は本書をご利用いただきありがとうございます。恐れ入りますが、以下のフォームにご記入いただき、送信していただけると幸いです。</p>
+                
+                <div class="form-group">
+
+                <label for="name">お名前<span class="badge bg-danger">必須</span></label>
+                <input type="text" id="name" name="name" class="form-control" required>
+                
+                </div>
+
+                <div class="form-group">
+
+                    <label for="job">ご職業</label>
+                    <select id="job" name="job" class="form-control">
+                        <option value="">選択してください</option>
+                        <option value="会社員">会社員</option>
+                        <option value="学生">学生</option>
+                        <option value="その他">その他</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label>知りたい内容(複数回答可)</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="q1" value="html">
+                            HTML
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="q1" value="css">
+                            CSS
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="q1" value="javascript">
+                            Javascript
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>理解度はいかがですか？</label>
+                    <div>
+                        <label class="radio-inline">
+                            <input type="radio" name="q2" id="q2-1" value="1">理解できなかった
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="q2" id="q2-2" value="1">大体理解できた
+                        </label><label class="radio-inline">
+                            <input type="radio" name="q2" id="q2-3" value="1">理解できた
+                        </label><label class="radio-inline">
+                            <input type="radio" name="q2" id="q2-4" value="1">回答しない
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">ご意見</label>
+                    <textarea name="message" id="message" rows="10" class="form-control">
+                    </textarea>
+                </div>
+                <button type="submit" class="btn page-link link-darkS">送信する</button>
+            </div><!-- col-sm-8 -->
+            
+        </form>   
+    </div>
+
+    <hr>
+    <div class="container">
+    <footer>
+        <p>&copy; H20 space</p>
+    </footer>
+    </div><!--container-->
+</body>
+</html>
